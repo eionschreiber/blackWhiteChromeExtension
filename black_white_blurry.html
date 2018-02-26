@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Black White and Blur</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+      }
+      span{
+        display: block;
+        font-weight: bold;
+        margin-top: 1em;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <h1>Black White and Blurry</h1>
+    <br>
+    <div id="container">
+      <span>Filter Effects</span>
+      <select id="dropdown">
+        <option selected disabled hidden value=''></option>
+        <option value="grayscale(100%)">Gray Scale</option>
+        <option value="blur(.8px)">Slight Blur</option>
+        <option value="blur(2px)">Blur</option>
+        <option value="blur(5px)">Very Blurry</option>
+        <option value="none">None</option>
+      </select>
+    </div>
+  </body>
+</html>
