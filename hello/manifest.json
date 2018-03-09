@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Web Design Tests",
+  "description": "A design tool that uses filters to turn the web page grayscale and blury. This can help show where contrast is needed in a design.",
+  "version": "1.0",
+
+  "background": {
+      "persistent": false,
+      "scripts": ["popup.js"]
+    },
+
+  "browser_action": {
+    "default_icon": "icon128.png",
+    "default_popup": "black_white_blur.html"
+  },
+
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
